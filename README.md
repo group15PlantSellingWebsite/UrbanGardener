@@ -1,6 +1,6 @@
 # Realtime plant selling website using Node-express-mongo-socket.io
 
-![Realtime Pizza app]
+
 
 
 
