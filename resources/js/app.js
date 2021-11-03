@@ -104,3 +104,9 @@ socket.on('orderUpdated', (data) => {
     }).show();
 })
 
+
+// let indoor = document.querySelector("#indoor")
+// indoor.addEventListener('click',async (e)=>{
+//     await axios.post('/category' , {search:"indoor"}).then()
+//     console.log(res)
+// })
