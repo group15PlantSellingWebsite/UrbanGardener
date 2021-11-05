@@ -36,9 +36,25 @@ After download or clone run `npm install` OR `yarn install` to install all the d
 ![](public/homepage.jpg)
 
 
+## category 
+
+![](public/category.jpg)
+
+
+## category plant page 
+
+![](public/categorypageimg.jpg)
+
+
 ## all plants
 
 ![](public/plantspage.jpg)
+
+
+## search page 
+
+![](public/searchpage.jpg)
+
 
 
 ## cart page 
