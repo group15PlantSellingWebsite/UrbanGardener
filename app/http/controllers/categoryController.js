@@ -3,7 +3,6 @@ function categoryController() {
     return {
         async index(req, res) {
             // console.log(req.params.type)
-            const resPerPage = 16
             const plants = await Menu.find({'category':req.params.type})
             return res.render('category',  { plants: plants , type:req.params.type })
         }
