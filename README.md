@@ -56,7 +56,6 @@ After download or clone run `npm install` OR `yarn install` to install all the d
 ![](public/searchpage.jpg)
 
 
-
 ## cart page 
 
 ![](public/cartpage.jpg)
