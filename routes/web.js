@@ -1,7 +1,10 @@
 
 
 const homeController = require('../app/http/controllers/homeController')
+const searchController = require('../app/http/controllers/searchController')
 const categoryController = require('../app/http/controllers/categoryController')
+const specificPlantController = require("../app/http/controllers/specificPlantController")
+
 const authController = require('../app/http/controllers/authController')
 const cartController = require('../app/http/controllers/customers/cartController')
 const orderController = require('../app/http/controllers/customers/orderController')
@@ -16,6 +19,8 @@ const admin = require('../app/http/middlewares/admin')
 function initRoutes(app) {
     app.get('/', homeController().index)
     app.get("/category/:type" ,categoryController().index)
+    app.post("/search" , searchController().index)
+    app.get("/:name" , specificPlantController().index)
 
     app.get('/login', guest, authController().login)
     app.post('/login', authController().postLogin)

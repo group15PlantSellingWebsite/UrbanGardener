@@ -110,3 +110,20 @@ socket.on('orderUpdated', (data) => {
 //     await axios.post('/category' , {search:"indoor"}).then()
 //     console.log(res)
 // })
+
+
+const button = document.querySelector(".butn");
+const ul = document.querySelector(".ul");
+
+function myFunction() {
+
+    if(ul.classList.contains('hidden')){
+        ul.classList.remove('hidden');
+    }
+    else{
+        ul.classList.add("hidden");
+    }
+}
+
+button.addEventListener("click",myFunction);
+

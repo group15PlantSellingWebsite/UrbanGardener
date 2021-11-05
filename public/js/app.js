@@ -2290,6 +2290,19 @@ socket.on('orderUpdated', function (data) {
 //     console.log(res)
 // })
 
+var button = document.querySelector(".butn");
+var ul = document.querySelector(".ul");
+
+function myFunction() {
+  if (ul.classList.contains('hidden')) {
+    ul.classList.remove('hidden');
+  } else {
+    ul.classList.add("hidden");
+  }
+}
+
+button.addEventListener("click", myFunction);
+
 /***/ }),
 
 /***/ "./resources/js/stripe.js":

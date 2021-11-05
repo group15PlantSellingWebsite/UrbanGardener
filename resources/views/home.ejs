@@ -54,7 +54,16 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
         <% plants.forEach(function(plant) { %>
         <div class="w-full md:w-64 mb-4">
-            <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
+
+            <!-- <form id="searchProduct" action="/search" method="POST">
+                <a onclick="document.getElementById('searchProduct').submit()" href="#">
+                    <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
+                </a>
+            </form> -->
+
+            <a href="/<%= plant.name %>">
+                <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
+            </a>
             <div class="text-center">
                 <h2 class="mb-4 text-lg"><%= plant.name %></h2>
                 <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= plant.size %></span> -->
