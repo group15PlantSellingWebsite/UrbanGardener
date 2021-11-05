@@ -19,8 +19,8 @@ const admin = require('../app/http/middlewares/admin')
 function initRoutes(app) {
     app.get('/', homeController().index)
     app.get("/category/:type" ,categoryController().index)
+    app.get("/specificPlant/:name" , specificPlantController().index)
     app.post("/search" , searchController().index)
-    app.get("/:name" , specificPlantController().index)
 
     app.get('/login', guest, authController().login)
     app.post('/login', authController().postLogin)

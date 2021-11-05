@@ -1,6 +1,4 @@
 const Menu = require('../../models/menu')
-
-
 function searchController() {
     return {
         async index(req, res) {
