@@ -1,83 +1,117 @@
-<section class="hero py-16">
-    <div class="container mx-auto flex items-center justify-between">
+<section class="hero py-16 " id="slideshow">
+    <div class="container mx-auto flex items-center justify-between fade">
         <div class="w-1/2">
-            <h6 class="text-lg"><em>Spread greenery around</em></h6>
-            <h1 class="text-3xl md:text-6xl font-bold">Save the World</h1>
+            <h6 class="text-xl"><em>Decorate your life ..</em></h6>
+            <h1 class="text-3xl md:text-6xl font-bold">In a Greener Way</h1>
             <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Shop Now</button>
 
         </div>
         <div class="w-1/2">
             <img src="/img/philodendronbrokenheart_45_1.webp" alt="Hero image">
         </div>
+
     </div>
 </section>
 
+<section class="hidden md:block info container mx-auto py-8">
+    <div class="grid-col-2 flex py-0 px-0">
+        <div class="fade w-1/2">
+            <img class="rounded-full" src="/img/satisfaction.jpg" alt="">
+        </div>
+        <div class="w-1/2 pt-24">
+            <h1 class=" text-center text-3xl ml-7 font-bold">Satisfaction</h1>
+            <p class="text-xl text-justify">Gardening is an anti-depressant. Gardening can make you feel VICTORY after you have
+                planted a plant in a pot or in your garden just yesterday and in a day or two when you see it surviving
+            </p>
+        </div>
+    </div>
+    
+    <div class="grid-col-2 flex py-0 px-0 ">
 
-
+        <div class="w-1/2 pt-24 ">
+            <h1 class=" text-center text-3xl ml-7 font-bold">Personalised Gift</h1>
+            <p class="text-xl p-8 text-justify">
+                Gift your loved ones the peace and tranquillity that comes with having nature around, gift them a plant.
+                A reminder to slow down, take a breath and be happy, a reminder that you care. Plants are gifts that
+                will live with them and keep giving for a lifetime. At Ugaoo, we promise to deliver the best of the
+                plants you choose and happiness is guaranteed.
+            </p>
+        </div>
+        <div class="fade w-1/2">
+            <img class="rounded-full mt-8" src="/img/gift.jpg" alt="">
+        </div>
+    </div>
+</section>
+<hr>
 <section class="menu container mx-auto py-8">
-    <h1 class="text-xl font-bold mb-8">category of Plant</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 ">
-        <div class="w-full md:w-64 mb-4 rounded">
-            <a id="indoor" href="/category/indoor"><img class="h-56 mb-4 mx-auto" src="/img/indoorlogo.jfif" alt="indoor logo">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Indoor Plants</h2>
-            </div>
+    <h1 class="text-xl font-bold mb-8 mx-auto">Types of Plant</h1>
+    <div class=" grid grid-cols-1 justify-items-center md:grid-cols-3 md:justify-items-center ">
+        <div class="w-full md:w-64 mb-4 ">
+            <a id="indoor" href="/category/indoor"><img class="h-56 mb-4 mx-auto rounded-full"
+                    src="/img/indoorlogo.jfif" alt="indoor logo">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Indoor Plants</h2>
+                </div>
             </a>
         </div>
 
         <div class="w-full md:w-64  mb-4 ">
-            <a id="airpurifying" href="/category/airPurifier"><img class="h-56 mb-4 mx-auto" src="/img/airpurifying.jfif" alt="air purifying log">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Air Purifying</h2>
-            </div>
+            <a id="airpurifying" href="/category/airPurifier"><img class="h-56 mb-4 mx-auto rounded-full"
+                    src="/img/airpurifying.jfif" alt="air purifying log">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Air Purifying</h2>
+                </div>
             </a>
         </div>
 
         <div class="w-full md:w-64 mb-4 ">
-            <a id="lowMaintenence" href="/category/lowMaintenence"><img class="h-56 mb-4 mx-auto" src="/img/lowmaintainece.jfif" alt="low maintence logo">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Low Maintence</h2>
-            </div>
-        </a>
+            <a id="lowMaintenence" href="/category/lowMaintenence"><img class="h-56 mb-4 mx-auto rounded-full"
+                    src="/img/lowmaintainece.jfif" alt="low maintence logo">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Low Maintence</h2>
+                </div>
+            </a>
         </div>
 
 
     </div>
-    
+
 </section>
 
-
+<hr class="px-0 py-0 mx-0 my-0">
 
 
 <section class="menu container mx-auto py-8">
-    <h1 class="text-xl font-bold mb-8">All Plants</h1>
+    <h1 class="text-xl font-bold mb-8">Our Products</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
         <% plants.forEach(function(plant) { %>
-        <div class="w-full md:w-64 mb-4">
+            <div class="w-full md:w-64 mb-4">
 
-            <!-- <form id="searchProduct" action="/search" method="POST">
+                <!-- <form id="searchProduct" action="/search" method="POST">
                 <a onclick="document.getElementById('searchProduct').submit()" href="#">
                     <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
                 </a>
             </form> -->
 
-            <a href="/specificPlant/<%= plant.name %>">
-                <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
-            </a>
-            <div class="text-center">
-                <h2 class="mb-4 text-lg"><%= plant.name %></h2>
-                <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= plant.size %></span> -->
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">₹<%= plant.price %></span>
-                    <button data-pizza="<%= JSON.stringify(plant) %>"
-                        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
+                <a href="/specificPlant/<%= plant.name %>">
+                    <img class="h-64 mb-4 mx-auto" src="/img/<%= plant.image %>.webp" alt="">
+                </a>
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">
+                        <%= plant.name %>
+                    </h2>
+                    <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= plant.size %></span> -->
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹<%= plant.price %></span>
+                        <button data-pizza="<%= JSON.stringify(plant) %>"
+                            class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <% }) %>
+            <% }) %>
 
     </div>
 </section>
