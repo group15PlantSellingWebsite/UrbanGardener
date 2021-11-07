@@ -2,8 +2,8 @@
  import { placeOrder } from './apiService'
  import { CardWidget } from './CardWidget'
 
-export async function initStripe() {
-    const stripe = await loadStripe('pk_test_51Hf6vbDfWW6uHRy7b6Upoa4bWhGYmk2ElEN4AiFeqozzlccU6OpAoD9d1oIar3qg9i8ASiOs9ly4rFJQOTPM5MMk00GN7COA2N');
+export async function initStripe() {    
+    const stripe = await loadStripe('pk_test_51JseKWSCCSvVwri0loJZ133wsdE0Yx5yFCj9wrGJ25BG11vA92lKF36oH7FTQ4uelqfronKmfb4wocuJ0z0titK000UCz68rZD');
     let card = null;
     // function mountWidget() {
     //         const elements = stripe.elements()
