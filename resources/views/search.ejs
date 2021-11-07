@@ -1,6 +1,6 @@
 <section class="container flex m-auto flex-col">
     <% plants.forEach(function(plant) { %>
-    <div class="plant-container flex flex-row">
+    <div class="plant-container flex flex-col sm:flex-row md:flex-row lg:flex-row" >
         <div class="imgDiv lg:w-1/4 md:w-1/4 flex flex-col justify-center items-center">
             <img class="h-64" src="/img/<%= plant.image %>.webp" alt="">
         </div>
