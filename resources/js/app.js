@@ -127,3 +127,30 @@ function myFunction() {
 
 button.addEventListener("click",myFunction);
 
+const image = document.querySelector("#image")
+const slogan = document.querySelector("#slogan");
+const path = "/img/";
+const imgList = ["philodendronbrokenheart_45_1.webp","aglaonemapinkbeauty_45_1.webp","45_32.webp"
+                , "stringofbananasspink_45.webp" ,"haworthiacooperihybrid_45.webp","aglaonemalightpink_45_1.webp"
+                , "christmascactus_45_1.webp"]
+const slnList = [ 
+    "In a Greener Way",
+    "Grow Your Dreams",
+    "Go the Green Way",
+    "Garden That Everyone Loves",
+    "Be environment-friendly",
+    "Best way to go green",
+    "Feel the fantastic hobby"
+
+
+]
+let i=0;
+setInterval(()=>{
+    i++;
+    if(i== imgList.length){
+        i = 0;
+    }
+    image.src = path+imgList[i]
+    slogan.innerHTML = slnList[i];
+
+},4000);

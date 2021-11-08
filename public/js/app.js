@@ -2302,6 +2302,22 @@ function myFunction() {
 }
 
 button.addEventListener("click", myFunction);
+var image = document.querySelector("#image");
+var slogan = document.querySelector("#slogan");
+var path = "/img/";
+var imgList = ["philodendronbrokenheart_45_1.webp", "aglaonemapinkbeauty_45_1.webp", "45_32.webp", "stringofbananasspink_45.webp", "haworthiacooperihybrid_45.webp", "aglaonemalightpink_45_1.webp", "christmascactus_45_1.webp"];
+var slnList = ["In a Greener Way", "Grow Your Dreams", "Go the Green Way", "Garden That Everyone Loves", "Be environment-friendly", "Best way to go green", "Feel the fantastic hobby"];
+var i = 0;
+setInterval(function () {
+  i++;
+
+  if (i == imgList.length) {
+    i = 0;
+  }
+
+  image.src = path + imgList[i];
+  slogan.innerHTML = slnList[i];
+}, 4000);
 
 /***/ }),
 
