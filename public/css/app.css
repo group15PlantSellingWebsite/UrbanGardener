@@ -506,6 +506,7 @@ section.status {
   -webkit-animation-duration: 2.5s;
   animation-name: fade;
   animation-duration: 2.5s;
+  backface-visibility: visible;
 }
 
 @-webkit-keyframes fade {
