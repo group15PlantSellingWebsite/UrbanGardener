@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "group project",
   "scripts": {
+    "start": "node server.js",
     "serve": "node server.js",
     "dev": "nodemon server.js",
     "development": "mix",
