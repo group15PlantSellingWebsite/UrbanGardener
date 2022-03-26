@@ -1,9 +1,9 @@
 {
-  "name": "realtime-pizza",
+  "name": "green-desire",
   "version": "1.0.0",
-  "description": "This is our relatime pizza app",
+  "description": "This is our plant selling website",
   "main": "index.js",
-  "author": "Coder's Gyan",
+  "author": "group project",
   "scripts": {
     "serve": "node server.js",
     "dev": "nodemon server.js",

@@ -1,6 +1,9 @@
 
 
 const homeController = require('../app/http/controllers/homeController')
+const productController = require('../app/http/controllers/productController')
+
+
 const searchController = require('../app/http/controllers/searchController')
 const categoryController = require('../app/http/controllers/categoryController')
 const specificPlantController = require("../app/http/controllers/specificPlantController")
@@ -18,6 +21,7 @@ const admin = require('../app/http/middlewares/admin')
 
 function initRoutes(app) {
     app.get('/', homeController().index)
+    app.get('/product', productController().index)
     app.get("/category/:type" ,categoryController().index)
     app.get("/specificPlant/:name" , specificPlantController().index)
     app.post("/search" , searchController().index)
