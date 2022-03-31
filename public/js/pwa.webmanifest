@@ -9,7 +9,7 @@
         "type": "image/png"
       }
     ],
-    "start_url": "/",
+    "start_url": "https://greendesire.herokuapp.com/",
     "display": "fullscreen",
     "theme_color": "#00FF00",
     "background_color": "#FFFFFF",
