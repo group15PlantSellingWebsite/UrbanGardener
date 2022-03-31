@@ -28189,7 +28189,7 @@ try {
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkrealtime_pizza"] = self["webpackChunkrealtime_pizza"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkgreen_desire"] = self["webpackChunkgreen_desire"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
