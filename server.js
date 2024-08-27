@@ -21,7 +21,6 @@ mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTo
 });
 
 
-
 // Session store
 let mongoStore = MongoDbStore.create({
                 mongoUrl: url,
